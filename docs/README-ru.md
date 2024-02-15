@@ -1,10 +1,8 @@
 # Xiaomi HyperOS Обход загрузчика
 
-![Version: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen?style=for-the-badge) [![中文文档](https://img.shields.io/badge/中文文档-brightgreen?style=for-the-badge)](README-zh.md) [![日本語](https://img.shields.io/badge/日本語-brightgreen?style=for-the-badge)](README-ja.md)
+![Версия: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen?style=for-the-badge) [![中文文档](https://img.shields.io/badge/中文文档-brightgreen?style=for-the-badge)](README-zh.md) [![日本語](https://img.shields.io/badge/日本語-brightgreen?style=for-the-badge)](README-ja.md)
 
-A PoC that exploits a vulnerability to bypass the Xiaomi HyperOS community restrictions of BootLoader unlocked account bindings.
-
-Feel free pull request if you want :)
+PoC, использующий уязвимость для обхода ограничений сообщества Xiaomi HyperOS на разблокировку загрузчика.
 
 ## 💘 php-adb
 
@@ -73,26 +71,23 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 
 ## 🔖 Вопросы и ответы
 
-- Вопрос: Why does the unlock tool still remind me to wait 168/360 (or more) hours?
-  - Ответ: By principle, this PoC only bypasses the restrictions added for HyperOS. You still need to comply with the restrictions for MIUI.
+ - Вопрос: Почему инструмент разблокировки все еще напоминает мне о необходимости подождать 168/360 (или более) часов?
+  - Ответ: В принципе, этот PoC позволяет обойти ограничения, добавленные для HyperOS. Вам по-прежнему необходимо соблюдать ограничения для MIUI.
 
-- Вопрос: The device shows `Couldn't verify, wait a minute or two and try again`.
-  - Ответ: This is normal, the binding request on the device side has been blocked by our script. The actual binding result is subject to the script prompt.
+- Вопрос: Устройство выдает сообщение `Не удалось проверить, подождите минуту или две и повторите попытку`.
+  - Ответ: Это нормально, запрос на привязку на стороне устройства был заблокирован нашим скриптом. Фактический результат привязки зависит от запроса скрипта.
 
-- Вопрос: Binding failed with error code `401`.
-  - Ответ: Your Xiaomi account credentials have expired, you need to log out and log in again in your device.
+- Вопрос: Привязка не удалась с кодом ошибки `401`.
+  - Ответ: Срок действия учетных данных вашей учетной записи Xiaomi истек, вам необходимо выйти и снова войти в систему на вашем устройстве.
 
-- Вопрос: Binding failed with error code `20086`.
-  - Ответ: Your device credentials have expired, you need to reboot your device.
+- Вопрос: Привязка не удалась с кодом ошибки `20086`.
+  - Ответ: Срок действия учетных данных вашего устройства истек, вам необходимо перезагрузить устройство.
 
-- Вопрос: Binding failed with error code `20090` or `20091`.
-  - Ответ: Device's Security Device Credential Manager function failure, contact after-sales.
+- Вопрос: Привязка не удалась с кодом ошибки `20090` или `20091`.
+  - Ответ: Сбой функции диспетчера учетных данных устройства безопасности, обратитесь в отдел продаж.
 
-- Вопрос: Binding failed with error code `30001`.
-  - Ответ: Your device has been forced to verify the account qualification by Xiaomi. Xiaomi lost its 'geek' spirit a long time ago, and there's nothing we can do about it.
-
-- Вопрос: Binding failed with error code `86015`.
-  - Ответ: The server has rejected this bind request, please try again.
+- Вопрос: Привязка не удалась с кодом ошибки `30001`.
+  - Ответ: Ваше устройство было принудительно проверено Xiaomi для подтверждения квалификации учетной записи. Xiaomi давно потеряла свой "гиковский" дух, и мы ничего не можем с этим поделать.
 
 ## ⚖️ Лицензия
 
