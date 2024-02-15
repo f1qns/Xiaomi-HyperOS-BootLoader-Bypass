@@ -1,4 +1,4 @@
-# Xiaomi HyperOS BootLoader Bypass
+# Xiaomi HyperOS Обход загрузчика
 
 ![Version: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen?style=for-the-badge) [![中文文档](https://img.shields.io/badge/中文文档-brightgreen?style=for-the-badge)](README-zh.md) [![日本語](https://img.shields.io/badge/日本語-brightgreen?style=for-the-badge)](README-ja.md)
 
@@ -8,7 +8,7 @@ Feel free pull request if you want :)
 
 ## 💘 php-adb
 
-The project proudly uses the [php-adb](https://github.com/MlgmXyysd/php-adb) library.
+Проект с гордостью использует [php-adb](https://github.com/MlgmXyysd/php-adb) библиотеку.
 
 ## ⚠️ Предупреждение
 
@@ -43,7 +43,7 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
   - Каждый аккаунт может разблокировать только 1 телефон в месяц и 3 телефона в год.
 - Вы прочитали и поняли [Предупреждение](#%EF%B8%8F-warning) привиденное выше.
 
-- \*  According to the unlocking instructions provided by Xiaomi, it will prohibit some accounts and devices from using the unlocking tool, which is called "risk control".
+- \*  Согласно инструкции по разблокировке, предоставленной Xiaomi, она запретит некоторым аккаунтам и устройствам использовать инструмент разблокировки, что называется "контролем риска".
 
 ## ⚙️ Как использовать?
 
@@ -53,47 +53,47 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 4. Загрузите [platform-tools](https://developer.android.com/studio/releases/platform-tools) и поместите их в `libraries`. *Примечание: в Mac OS необходимо переименовать `adb` в `adb-darwin`.
 5. Откройте терминал и с помощью интерпретатора PHP выполните [скрипт](../bypass.php).
 
-- p.s. Releases has packaged the required files and click-to-run scripts.
+- p.s. В релизы упакованы необходимые файлы и скрипты, запускаемые по щелчку мыши.
 
-6. Tap repeatedly on the `Settings - About Phone - MIUI Version` to enable `Development Options`.
-7. Enable `OEM Unlocking`, `USB Debugging` and `USB Debugging (Security Settings)` in `Settings - Additional Settings - Development Options`.
-8. Log in an _valid_\* Xiaomi account.
-9. Connect phone to PC via wired interface.
-10. Check `Always allow from this computer` and click `OK`.
+6. Нажмите несколько раз на `Настройки - О телефоне- MIUI версия` чтобы включить `Режим разработчика`.
+7. Включите `OEM-разблокировку`, `Отладка по USB` and `Отладка по USB (настройки безопасности)` in `Settings - Additional Settings - Development Options`.
+8. Войдите в _действительную_\* учетную запись Xiaomi.
+9. Подключите телефон к компьютеру через проводной интерфейс 
+10. Установите флажок `Всегда разрешать с этого компьютера` и нажмите `OK`.
 
-- \* See "[Unlocking Requirements](#-Unlocking-requirements)" above.
+- \* См. раздел "[Требования к разблокировке](#-Unlocking-requirements)" или выше.
 
-11. Wait and follow the prompts of script.
-12. After successful binding, you can use the [official unlock tool](https://en.miui.com/unlock/index.html) to check the time you need to wait.
-13. During the waiting period, please use the device normally, keep the SIM card inserted, do not log out of your account or turn off `Find My Phone`, and do not re-bind the device until it is successfully unlocked. The device will automatically send `HeartBeat` packets to the server every once in a while.
+11. Подождите и следуйте подсказкам сценария.
+12. После успешной привязки вы можете использовать [официальный инструмент разблокировки](https://en.miui.com/unlock/index.html), чтобы проверить время, которое вам нужно подождать.
+13. Во время ожидания пользуйтесь устройством в обычном режиме, не вынимайте SIM-карту, не выходите из учетной записи и не выключайте функцию `Найти мой телефон`, а также не привязывайте устройство повторно до тех пор, пока оно не будет успешно разблокировано. Устройство будет автоматически отправлять пакеты `HeartBeat` на сервер время от времени.
 
 ## 📖 Workaround
 
 - Undergoing maintenance...
 
-## 🔖 FAQs
+## 🔖 Вопросы и ответы
 
-- Q: Why does the unlock tool still remind me to wait 168/360 (or more) hours?
-  - A: By principle, this PoC only bypasses the restrictions added for HyperOS. You still need to comply with the restrictions for MIUI.
+- Вопрос: Why does the unlock tool still remind me to wait 168/360 (or more) hours?
+  - Ответ: By principle, this PoC only bypasses the restrictions added for HyperOS. You still need to comply with the restrictions for MIUI.
 
-- Q: The device shows `Couldn't verify, wait a minute or two and try again`.
-  - A: This is normal, the binding request on the device side has been blocked by our script. The actual binding result is subject to the script prompt.
+- Вопрос: The device shows `Couldn't verify, wait a minute or two and try again`.
+  - Ответ: This is normal, the binding request on the device side has been blocked by our script. The actual binding result is subject to the script prompt.
 
-- Q: Binding failed with error code `401`.
-  - A: Your Xiaomi account credentials have expired, you need to log out and log in again in your device.
+- Вопрос: Binding failed with error code `401`.
+  - Ответ: Your Xiaomi account credentials have expired, you need to log out and log in again in your device.
 
-- Q: Binding failed with error code `20086`.
-  - A: Your device credentials have expired, you need to reboot your device.
+- Вопрос: Binding failed with error code `20086`.
+  - Ответ: Your device credentials have expired, you need to reboot your device.
 
-- Q: Binding failed with error code `20090` or `20091`.
-  - A: Device's Security Device Credential Manager function failure, contact after-sales.
+- Вопрос: Binding failed with error code `20090` or `20091`.
+  - Ответ: Device's Security Device Credential Manager function failure, contact after-sales.
 
-- Q: Binding failed with error code `30001`.
-  - A: Your device has been forced to verify the account qualification by Xiaomi. Xiaomi lost its 'geek' spirit a long time ago, and there's nothing we can do about it.
+- Вопрос: Binding failed with error code `30001`.
+  - Ответ: Your device has been forced to verify the account qualification by Xiaomi. Xiaomi lost its 'geek' spirit a long time ago, and there's nothing we can do about it.
 
-- Q: Binding failed with error code `86015`.
-  - A: The server has rejected this bind request, please try again.
+- Вопрос: Binding failed with error code `86015`.
+  - Ответ: The server has rejected this bind request, please try again.
 
-## ⚖️ License
+## ⚖️ Лицензия
 
 No license, you are only allowed to use this project. All copyright (and link, etc.) in this software is not allowed to be deleted or changed without permission. All rights are reserved by [MeowCat Studio](https://github.com/MeowCat-Studio), [Meow Mobile](https://github.com/Meow-Mobile) and [NekoYuzu](https://github.com/MlgmXyysd).
