@@ -10,56 +10,48 @@ Feel free pull request if you want :)
 
 The project proudly uses the [php-adb](https://github.com/MlgmXyysd/php-adb) library.
 
-## ☕ Buy me a Coffee
+## ⚠️ Предупреждение
 
-✨ If you like my projects, you can buy me a coffee at:
+После разблокировки загрузчика, вы можете столкнуться со следующими проблемами:
 
- - [爱发电](https://afdian.net/@MlgmXyysd)
- - [PayPal](https://paypal.me/MlgmXyysd)
- - [Patreon](https://www.patreon.com/MlgmXyysd)
+- Программное или аппаратное обеспечение не работает должным образом или даже повреждено.
+- Потеря данных, хранящихся на устройстве.
+- Кража кредитной карты или другие финансовые потери.
 
-## ⚠️ Warning
+Если вы столкнулись с чем-либо из вышеперечисленного, вам следует взять всю ответственность на себя, поскольку это риск, с которым вы можете столкнуться при разблокировке загрузчика. Очевидно, что это не покрывает всех рисков. Вы были предупреждены.
 
-After unlocking the BootLoader, you may encounter the following situations:
-
-- Software or hardware not working properly or even damaged.
-- Loss of data stored in the device.
-- Credit card theft, or other financial loss.
-
-If you're experiencing any of the above, you should take all the responsibility yourself as this is the risk you may encounter when unlocking BootLoader. This obviously does not cover all risks. You've been warned.
-
-- Warranty lost. Not only the base warranty, but some of the extra extended warranties (such as Mi Care or broken-screen warranty) that you have purchased may also be lost according to the exclusions provided by Xiaomi.
-- Hardware level self-destruct like Samsung Knox. TEE-related features will be permanently damaged. There is no way to restore other than by replacing the motherboard.
-- Functional anomalies after flashing a third-party system due to closed-source kernel source code.
-- Device or account banned by unlocking BootLoader.
+- Потеря гарантии. Не только базовая гарантия, но и некоторые дополнительные расширенные гарантии (например, Mi Care или гарантия на разбитый экран), которые вы приобрели, также могут быть утрачены в соответствии с исключениями, предусмотренными Xiaomi.
+- Самоуничтожение на аппаратном уровне, как в Samsung Knox. Функции, связанные с TEE, будут безвозвратно повреждены. Восстановить их можно только путем замены материнской платы.
+- Функциональные аномалии после прошивки сторонней системы из-за закрытого исходного кода ядра.
+- Телефон или аккаунт заблокирован при разблокировке загрузчика.
 
 If you're experiencing any of the above, consider yourself damned. Ever since Xiaomi restricted unlocking BootLoader, it has been against Xiaomi's 'geek' spirit and even the GPL. Xiaomi's restrictions on BootLoader unlocking are endless, and there's nothing we as developers can do about it.
 
-## 📲 Unlocking requirements
+## 📲 Требования к разблокировке
 
-- An valid device:
-  - A unbanned\* Xiaomi, Redmi or POCO device.
-  - Your device is running the official version of HyperOS.
-  - (Update 2023/11/23) Your device is not forced to verify account qualification by Xiaomi.
-- An valid SIM card:
-  - \* Except for tablets that cannot use SIM cards.
-  - SIM card must not be out of service.
-  - SIM card needs to be able to access the internet.
-  - Only 2 devices per valid SIM card are allowed to be unlock to a valid SIM card within a three-month period.
-- An valid Xiaomi account:
-  - A unbanned\* Xiaomi account.
-  - Each account can only unlock 1 phone in a month and 3 phones in a year period.
-- You have read and understood the [Warning](#%EF%B8%8F-warning) above.
+- Действующее устройство:
+  - Разблокированное\* Xiaomi, Redmi или POCO устройство.
+  - На вашем устройстве запущена официальная версиюя HyperOS. 
+  - (Обновление 2023/11/23) Ваше устройство не принудительно проверяет квалификацию учетной записи Xiaomi.
+- Действующая SIM-карта:
+  - \* За исключением планшетов, которые не могут использовать SIM-карты.
+  - SIM-карта не должна быть нерабочей.
+  - SIM-карта должна иметь доступ в Интернет.
+  - В течение трех месяцев разрешается разблокировать только 2 устройства на одну действующую SIM-карту.
+- Действующая учетная запись Xiaomi:
+  - незаблокированный\* аккаунт Xiaomi.
+  - Каждый аккаунт может разблокировать только 1 телефон в месяц и 3 телефона в год.
+- Вы прочитали и поняли [Предупреждение](#%EF%B8%8F-warning) привиденное выше.
 
 - \*  According to the unlocking instructions provided by Xiaomi, it will prohibit some accounts and devices from using the unlocking tool, which is called "risk control".
 
-## ⚙️ How to use
+## ⚙️ Как использовать?
 
-1. Download and install PHP 8.0+ for your system from the [official website](https://www.php.net/downloads).
-2. Enable OpenSSL and Curl extension in `php.ini`. (And/or set `extension_dir` to your PHP's `ext` directory if script not work.)
-3. Place `adb.php` in [php-adb](https://github.com/MlgmXyysd/php-adb) to the directory.
-4. Download [platform-tools](https://developer.android.com/studio/releases/platform-tools) and place them in `libraries`. *Note: Mac OS needs to rename `adb` to `adb-darwin`.*
-5. Open a terminal and use PHP interpreter to execute the [script](../bypass.php).
+1. Загрузите и установите PHP 8.0+ для вашей операционной системы с [официального сайта](https://www.php.net/downloads).
+2. Включите расширение OpenSSL и Curl в файле `php.ini`. (И/или установите `extension_dir` в каталог PHP `ext` директорию, если скрипт не сработал.)
+3. Разместите файл `adb.php` в [php-adb](https://github.com/MlgmXyysd/php-adb) в директорию.
+4. Загрузите [platform-tools](https://developer.android.com/studio/releases/platform-tools) и поместите их в `libraries`. *Примечание: в Mac OS необходимо переименовать `adb` в `adb-darwin`.
+5. Откройте терминал и с помощью интерпретатора PHP выполните [скрипт](../bypass.php).
 
 - p.s. Releases has packaged the required files and click-to-run scripts.
 
