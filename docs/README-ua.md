@@ -1,4 +1,4 @@
-# Xiaomi HyperOS BootLoader Bypass
+# Xiaomi HyperOS Обхід Завантажувача
 
 ![Версія: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen?style=for-the-badge) [![中文文档](https://img.shields.io/badge/中文文档-brightgreen?style=for-the-badge)](README-zh.md) [![日本語](https://img.shields.io/badge/日本語-brightgreen?style=for-the-badge)](README-ja.md)
 
@@ -67,33 +67,33 @@ PoC, що використовує уразливість для обходу о
 12. After successful binding, you can use the [official unlock tool](https://en.miui.com/unlock/index.html) to check the time you need to wait.
 13. During the waiting period, please use the device normally, keep the SIM card inserted, do not log out of your account or turn off `Find My Phone`, and do not re-bind the device until it is successfully unlocked. The device will automatically send `HeartBeat` packets to the server every once in a while.
 
-## 📖 Workaround
+## 📖 Обхідний шлях
 
-- Undergoing maintenance...
+- Проходить технічне обслуговування...
 
-## 🔖 FAQs
+## 🔖 Поширені запитання
 
-- Q: Why does the unlock tool still remind me to wait 168/360 (or more) hours?
-  - A: By principle, this PoC only bypasses the restrictions added for HyperOS. You still need to comply with the restrictions for MIUI.
+- З: Чому інструмент розблокування все ще нагадує мені почекати 168/360 (або більше) годин?
+  - В: В принципі, цей PoC лише обходить обмеження, додані для HyperOS. Вам все одно потрібно дотримуватися обмежень для MIUI.
 
-- Q: The device shows `Couldn't verify, wait a minute or two and try again`.
-  - A: This is normal, the binding request on the device side has been blocked by our script. The actual binding result is subject to the script prompt.
+- З: Пристрій показує «Не вдалося підтвердити, зачекайте хвилину-дві і спробуйте ще раз».
+  - В: Це нормально, запит на прив'язку на стороні пристрою був заблокований нашим скриптом. Фактичний результат прив'язки залежить від запиту скрипта.
 
-- Q: Binding failed with error code `401`.
-  - A: Your Xiaomi account credentials have expired, you need to log out and log in again in your device.
+- З: Прив'язка не вдалася з кодом помилки `401`.
+  - В: Термін дії ваших облікових даних Xiaomi закінчився, вам необхідно вийти і знову увійти в обліковий запис на вашому пристрої.
 
-- Q: Binding failed with error code `20086`.
-  - A: Your device credentials have expired, you need to reboot your device.
+- З: Прив'язка не вдалася з кодом помилки `20086`.
+  - В: Термін дії облікових даних вашого пристрою закінчився, вам необхідно перезавантажити пристрій.
 
-- Q: Binding failed with error code `20090` or `20091`.
-  - A: Device's Security Device Credential Manager function failure, contact after-sales.
+- З: Прив'язка не вдалася з кодом помилки `20090` або `20091`.
+  - В: Збій у роботі диспетчера облікових даних пристрою безпеки, зверніться до служби післяпродажного обслуговування.
 
-- Q: Binding failed with error code `30001`.
-  - A: Your device has been forced to verify the account qualification by Xiaomi. Xiaomi lost its 'geek' spirit a long time ago, and there's nothing we can do about it.
+- З: Прив'язка не вдалася з кодом помилки `30001`.
+  - В: Ваш пристрій було примусово перевірено компанією Xiaomi для підтвердження кваліфікації облікового запису. Компанія Xiaomi давно втратила свій «гік-дух», і ми нічого не можемо з цим вдіяти.
 
-- Q: Binding failed with error code `86015`.
-  - A: The server has rejected this bind request, please try again.
+- З: Прив'язка не вдалася з кодом помилки `86015`.
+  - В: Сервер відхилив цей запит на прив'язку, будь ласка, спробуйте ще раз.
 
 ## ⚖️ License
 
-No license, you are only allowed to use this project. All copyright (and link, etc.) in this software is not allowed to be deleted or changed without permission. All rights are reserved by [MeowCat Studio](https://github.com/MeowCat-Studio), [Meow Mobile](https://github.com/Meow-Mobile) and [NekoYuzu](https://github.com/MlgmXyysd).
+Без ліцензії, вам дозволяється лише використовувати цей проект. Всі авторські права (і посилання тощо) на це програмне забезпечення заборонено видаляти або змінювати без дозволу. Всі права захищені [MeowCat Studio](https://github.com/MeowCat-Studio), [Meow Mobile](https://github.com/Meow-Mobile) и [NekoYuzu](https://github.com/MlgmXyysd).
