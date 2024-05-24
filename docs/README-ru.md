@@ -91,4 +91,4 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 
 ## ⚖️ Лицензия
 
-No license, you are only allowed to use this project. All copyright (and link, etc.) in this software is not allowed to be deleted or changed without permission. All rights are reserved by [MeowCat Studio](https://github.com/MeowCat-Studio), [Meow Mobile](https://github.com/Meow-Mobile) and [NekoYuzu](https://github.com/MlgmXyysd).
+Без лицензии, вам разрешено использовать только этот проект. Все авторские права (и ссылки, и т.д.) на это программное обеспечение не могут быть удалены или изменены без разрешения. Все права защищены [MeowCat Studio](https://github.com/MeowCat-Studio), [Meow Mobile](https://github.com/Meow-Mobile) и [NekoYuzu](https://github.com/MlgmXyysd).
